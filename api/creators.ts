@@ -22,8 +22,6 @@ router.get("/",(req,res)=>{
 });
 
 
-
-
 //add
 router.post("/",(req,res)=>{
     const creator : CreatorsGetResponse = req.body;
@@ -44,8 +42,6 @@ router.post("/",(req,res)=>{
           .json({ affected_row: result.affectedRows, last_idx: result.insertId });
     });
 });
-
-
 
 //delete
 router.delete("/:id",(req,res)=>{
